@@ -1,0 +1,323 @@
+<html>
+<head>
+	<title>Employee Registration Form</title>
+	<style>
+		body{
+			font-family: "comic sans ms", sans serif;
+			background: url("IMG_20211129_171759_470.png") no-repeat;
+			margin: 0;
+		}
+		
+		h2{
+			
+			color: white;
+			padding: 7px;
+			text-align: left;
+		}
+		td{
+			padding: 2px;
+		}
+		input{
+			height: 25px;
+			border-radius: 10px;
+			border: none;
+			
+		}
+		
+		input:focus{
+			outline: none;
+			border: 1px solid pink;
+		}
+		input:hover{
+			box-shadow: 5px 5px 5px black;
+		}
+		
+		.button{
+			color:#iii;
+			border: none;
+			padding: 7px
+			text-align: center;
+		}
+		
+		.button:hover {
+			cursor: pointer;
+			box-shadow: 5px 5px 5px red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">Employee Application Form</h1>
+	<form>
+		<div id="personal-details">
+		<h2 align="left">Personal Details</h2>
+			<table width="95%">
+				<tr>
+					<td>First Name</td>
+					<td>
+						<input type="text" placeholder="First Name" size="30">
+					</td>
+					<td>Middle Name</td>
+					<td>
+						<input type="text" placeholder="Middle Name" size="30">
+					</td>
+					<td>Last Name</td>
+					<td>
+						<input type="text" placeholder="Last Name" size="30">
+					</td>
+				</tr>
+				<tr>
+					<td>Father's Name</td>
+					<td>
+						<input type="text" placeholder="Father's Name" size="30">
+					</td>
+					<td>Mother's Name</td>
+					<td>
+						<input type="text" placeholder="Mother's Name" size="30">
+					</td>
+					<td>DOB</td>
+					<td>
+						<input type="date" size="30">
+					</td>	
+				</tr>
+				<td>Place of Birth</td>
+					<td>
+						<input type="text" placeholder="Place of Birth" size="30">
+					</td>
+					<td>Contact Details</td>
+					<td>
+						<input type="text" placeholder="Contact Details" size="70">
+					</td>
+					
+				<tr>
+				<td colspan="2">Select Gender
+						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="feale">Female
+					</td>
+					<td>Phone Number</td>
+					<td>
+						<input type="number" placeholder="+234 *** *** ***" size="25">
+					</td>
+					<td>Email:</td>
+					<td>
+						<input type="text" placeholder="your id@gmail.com" size="25">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">Language Spoken: 
+						<input type="checkbox" value="english">English
+						<input type="checkbox" value="bengali">Hausa
+						<input type="checkbox" value="hindi">Arabic
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- Address Details -->
+		<div id="address-details">
+		<h2>Address Details</h2>
+			<table width="100%">
+				
+				<tr>
+					<td>Nationality</td>
+					<td>
+						<input type="radio" name="gender" value="indian">Nigeria
+						<input type="radio" name="gender" value="other">Other Country
+					</td>
+					<td>STATE</td>
+					<td>
+						<select>
+							<option>ABIA</option>
+							<option>ADAMAWA</option>
+							<option>AKWA IBOM</option>
+							<option>ANAMBRA</option>
+							<option>BAUCHI</option>
+							<option>BAYELSA</option>
+							<option>BENUE</option>
+							<option>BORNO</option>
+							<option>CROSS RIVER</option>
+							<option>DELTA</option>
+							<option>EBONYI</option>
+							<option>EDO</option>
+							<option>EKITI</option>
+							<option>ENUGU</option>
+							<option>GOMBE</option>
+						</select>
+					</td>
+					<td>L.G.A</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+				</tr>
+				<tr>
+					<td>Contact Address</td>
+					<td>
+						<input type="text" size="60">
+					</td>
+					<td>Post Office</td>
+					<td>
+						<input type="text" size="50">
+					</td>
+				</tr>
+			</table>
+			<br>
+		</div>
+		<!-- Educational Qualification -->
+		<div id="Educational-Qualification">
+		<h2> Educational Qualification</h2>
+			<table width="95%">
+				<tr>
+					<td>S/N</td>
+					<td>Qualification</td>
+					<td>Instituited / University</td>
+					<td>Year of Passing</td>
+					<td>Marks (%)</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- Work Experience -->
+		<div id="work-experience">
+		<h2>Work Experience</h2>
+			<table width="95%">
+				<tr>
+					<td>S/N</td>
+					<td>Company Address</td>
+					<td>Work / Role</td>
+					<td>Duration (From - To)</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="date" size="25">
+					</td>
+					<td>
+						<input type="date" size="25">
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="text" size="25">
+					</td>
+					<td>
+						<input type="date" size="25">
+					</td>
+					<td>
+						<input type="date" size="25">
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- Other Details -->
+		<div id="other-details">
+		<h2>Other Details</h2>
+			<table width="100%">
+				<tr>
+					<td>Job Type</td>
+					<td>
+						<input type="radio" name="jobtype" value="permanent">Permanent
+					</td>
+					<td>
+						<input type="radio" name="jobtype" value="contrect">Contrect
+					</td>
+					<td>
+						<input type="radio" name="jobtype" value="other">Other
+					</td>
+				</tr>
+				<tr>
+					<td>Date Of Joining</td>
+					<td>
+						<input type="date">
+					</td>
+					<td>Date Of Joining</td>
+					<td>
+						<input type="date">
+					</td>
+				<tr>
+					<td>Preferred Job Location</td>
+					<td>
+						<input type="radio" name="joblovation" value="ABUJA">ABUJA
+					</td>
+					<td>
+						<input type="radio" name="joblovation" value="LAGOS">LAGOS
+					</td>
+					<td>
+						<input type="radio" name="joblovation" value="KANO">KANO
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox">
+					</td>
+					<td colspan="2">All the above mentioned information is true as per my knowledge.
+				</tr>
+				<tr>
+					<td><center>
+						<input type="Submit" value="Submit" class="button">
+					</td>
+					<td>
+						<input type="Reset" value="Reset" class="button">
+					</center></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</body>
+</html>
